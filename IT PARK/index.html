@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uz" style="scroll-behavior:smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joylinks IT Hub & Academy — Termiz</title>
+<meta name="description" content="Termizda IT kurslar, kovorking va startap inkubatsiyasi. IT Park Surxondaryo filiali, At-Termiziy 28V.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="sticky z-40 sf border-x-0 border-t-0" style="top:env(safe-area-inset-top,0px)">
+ <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+  <a href="#home" class="flex items-center gap-3 font-bold" aria-label="Joylinks IT Hub — bosh sahifa">
+   <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" class="f1"/><path d="M11 10v10a4 4 0 0 0 8 0M23 10v16" stroke="var(--pt)" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="26" cy="12" r="2.2" class="f2"/></svg>
+   <span class="leading-tight text-sm">Joylinks<br><span class="mu font-medium text-xs">IT Hub & Academy</span></span></a>
+  <nav class="hidden lg:flex gap-6 text-sm font-semibold" id="nav" aria-label="Asosiy menyu">
+   <a href="#home" data-i="n1">Bosh sahifa</a><a href="#courses" data-i="n2">Kurslar</a><a href="#cowork" data-i="n3">Kovorking</a><a href="#startups" data-i="n4">Startaplar</a><a href="#about" data-i="n5">Mentorlar</a><a href="#contact" data-i="n6">Aloqa</a>
+  </nav>
+  <div class="flex items-center gap-2">
+   <div class="sf rounded-full p-1 flex text-xs font-bold" id="lang" role="group" aria-label="Til"><button data-l="uz" class="px-2 py-1 rounded-full">UZ</button><button data-l="en" class="px-2 py-1 rounded-full">EN</button><button data-l="ru" class="px-2 py-1 rounded-full">RU</button></div>
+   <a href="#register" class="btn hidden md:inline-flex !py-2 text-sm" data-i="cta">Ro’yxatdan o’tish</a>
+   <button id="mb" class="lg:hidden sf rounded-lg w-10 h-10 grid place-items-center" aria-label="Menyu" aria-expanded="false" aria-controls="mm"><i data-ic="menu"></i></button>
+  </div>
+ </div>
+ <div id="mm" class="hidden lg:hidden px-4 pb-4 grid gap-3 text-sm font-semibold"></div>
+</header>
+
+<main>
+<section id="home" class="px-4 pt-14 pb-16">
+ <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+  <div>
+   <p class="sf inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-semibold mb-6"><i data-ic="pin" class="text-[color:var(--p)]"></i><span data-i="ey">IT Park Surxondaryo filiali, Termiz</span></p>
+   <h1 class="text-3xl sm:text-4xl lg:text-5xl leading-tight" data-i="h1">Termizda IT kasbini boshlang va xalqaro bozorga chiqing</h1>
+   <p class="mu text-lg mt-6 max-w-xl" data-i="sub">Mentorlar bilan amaliy kurslar, tez internetli kovorking va startap loyihalar uchun jamoa — hammasi bir joyda.</p>
+   <div class="flex flex-wrap gap-3 mt-8">
+    <a href="#courses" class="btn" data-i="b1">Kurslarni ko’rish</a>
+    <a href="#cowork" class="btn o" data-i="b2">Kovorkingga joy band qilish</a>
+   </div>
+   <ul class="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm font-semibold" id="facts"></ul>
+  </div>
+  <div class="sf rounded-3xl p-3 overflow-hidden">
+    <img src="filial.jpg" alt="">
+  </div>
+ </div>
+</section>
+
+<section id="courses" class="px-4 py-16">
+ <div class="max-w-7xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl" data-i="t1">Kurslar</h2>
+  <p class="mu mt-3 max-w-2xl">Haftasiga 3 marta dars, real loyihalar va mentor nazorati. Boshlang’ich bilimsiz ham kelish mumkin.</p>
+  <div class="flex flex-wrap gap-2 my-8" id="chips" role="group" aria-label="Yo’nalish bo’yicha filtr"></div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="cg"></div>
+ </div>
+</section>
+
+<section id="cowork" class="px-4 py-16" style="background:var(--soft)">
+ <div class="max-w-7xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl" data-i="t2">Kovorking va IT infratuzilma</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-10" id="feat"></div>
+  <div class="grid md:grid-cols-3 gap-5 mt-12" id="plans"></div>
+  <p class="mu text-sm mt-4">Narxlar taxminiy. Aniq tarif va bo’sh joylar uchun qo’ng’iroq qiling.</p>
+ </div>
+</section>
+
+<section id="startups" class="px-4 py-16">
+ <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+  <div>
+   <h2 class="text-2xl sm:text-3xl" data-i="t3">Startap inkubatsiya va outsource</h2>
+   <p class="mu mt-4">Yosh dasturchilar jamoada real loyiha qiladi, portfolio yig’adi va Upwork kabi masofaviy ish bozoriga chiqadi.</p>
+   <a href="#register" class="btn mt-6">Loyiha bilan qo’shilish</a>
+  </div>
+  <ol class="grid sm:grid-cols-2 gap-4" id="steps"></ol>
+ </div>
+</section>
+
+<section id="about" class="px-4 py-16" style="background:var(--soft)">
+ <div class="max-w-7xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl" data-i="t4">Mentorlar</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10" id="mentors"></div>
+ </div>
+</section>
+
+<section class="px-4 py-16">
+ <div class="max-w-7xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl" data-i="t5">Talabalar fikri</h2>
+  <div class="grid md:grid-cols-3 gap-5 mt-10" id="rev"></div>
+ </div>
+</section>
+
+<section class="px-4 py-16" style="background:var(--soft)">
+ <div class="max-w-3xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl mb-8" data-i="t7">Ko’p so’raladigan savollar</h2>
+  <div class="grid gap-3" id="faq"></div>
+ </div>
+</section>
+
+<section id="register" class="px-4 py-16">
+ <div class="max-w-3xl mx-auto sf rounded-3xl p-6 sm:p-10">
+  <h2 class="text-2xl sm:text-3xl" data-i="t6">Bepul konsultatsiya</h2>
+  <p class="mu mt-2 mb-6">Ma’lumotingizni qoldiring, so’ng Telegram yoki telefon orqali tasdiqlang.</p>
+  <form id="f" class="grid gap-4" novalidate>
+   <input id="fn" placeholder="To’liq ism" aria-label="To’liq ism" required autocomplete="name">
+   <input id="ph" type="tel" value="+998 " inputmode="tel" aria-label="Telefon raqami" required autocomplete="tel">
+   <select id="cs" aria-label="Kurs yoki xizmat"></select>
+   <textarea id="ms" rows="3" placeholder="Xabar (ixtiyoriy)" aria-label="Xabar"></textarea>
+   <button class="btn" type="submit">Yuborish</button>
+  </form>
+ </div>
+</section>
+
+<section id="contact" class="px-4 py-16" style="background:var(--soft)">
+ <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8">
+  <div class="sf rounded-3xl p-6 sm:p-8 grid gap-5 content-start">
+   <h2 class="text-2xl sm:text-3xl" data-i="n6">Aloqa</h2>
+   <p class="mu -mt-2">IT Park Uzbekistan — Surxondaryo filiali</p>
+   <p class="flex gap-3"><span class="ico"><i data-ic="pin"></i></span><span>Termiz shahri, At-Termiziy ko’chasi, 28V</span></p>
+   <p class="flex gap-3"><span class="ico"><i data-ic="phone"></i></span><a href="tel:+998993323220" class="self-center font-semibold">+998 99 332-32-20 </a></p>
+   <p class="flex gap-3"><span class="ico"><i data-ic="send"></i></span><a href="https://t.me/Joylinks_Termiz" target="_blank" rel="noopener" class="self-center font-semibold">Telegram: Joylinks_Termiz</a></p>
+   <p class="flex gap-3"><span class="ico"><i data-ic="insta"></i></span><a href="https://instagram.com/joylinks_termiz" target="_blank" rel="noopener" class="self-center font-semibold">Instagram: joylinks_termiz</a></p>
+  </div>
+  <div class="sf rounded-3xl overflow-hidden relative min-h-[320px] grid place-items-center p-6 text-center">
+   <svg viewBox="0 0 400 320" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <rect width="400" height="320" class="f3"/>
+    <path d="M-10 250c60-30 120 20 190-10s130-40 230-10v100H-10z" style="fill:var(--p);opacity:.25"/>
+    <g class="s2" stroke-width="10" fill="none" stroke-linecap="round"><path d="M0 90h400M0 190h400M110 0v320M280 0v320"/></g>
+    <g style="stroke:var(--sf)" stroke-width="6" fill="none"><path d="M0 90h400M0 190h400M110 0v320M280 0v320"/></g>
+   </svg>
+   <div class="relative">
+    <span class="ico mx-auto !w-14 !h-14" style="background:var(--p);color:var(--pt)"><i data-ic="pin" class="scale-125"></i></span>
+    <b class="block mt-3">IT Park, Termiz</b><span class="mu text-sm">At-Termiziy 28V</span>
+    <a class="btn mt-4" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=IT+Park+Termiz+At-Termiziy+28V">Xaritada ochish</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="px-4 py-12 border-t" style="border-color:var(--bd)">
+ <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+  <div><b class="text-lg">Joylinks IT Hub & Academy</b><p class="mu mt-2">Termiz, At-Termiziy 28V</p>
+   <div class="flex gap-3 mt-4"><a class="ico" href="https://t.me/Joylinks_Termiz" target="_blank" rel="noopener" aria-label="Telegram"><i data-ic="send"></i></a><a class="ico" href="https://instagram.com/joylinks_termiz" target="_blank" rel="noopener" aria-label="Instagram"><i data-ic="insta"></i></a><a class="ico" href="tel:+998993323220" aria-label="Qo’ng’iroq"><i data-ic="phone"></i></a></div></div>
+  <nav class="grid gap-2 content-start font-semibold" aria-label="Pastki menyu"><a href="#courses">Kurslar</a><a href="#cowork">Kovorking</a><a href="#startups">Startaplar</a><a href="#contact">Aloqa</a></nav>
+  <div><b>Yangiliklar uchun</b><p class="mu mt-2">E’lon va tadbirlar IT Park Telegram kanalida.</p><a href="https://t.me/Joylinks_Termiz" target="_blank" rel="noopener" class="btn mt-3">Kanalga o’tish</a></div>
+ </div>
+ <p class="max-w-7xl mx-auto mu text-xs mt-8">© 2026 Joylinks IT Hub & Academy. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<div id="toast" role="status" class="fixed left-1/2 -translate-x-1/2 sf rounded-xl px-5 py-3 text-sm font-semibold z-50 opacity-0 pointer-events-none transition-opacity shadow-lg" style="bottom:calc(env(safe-area-inset-bottom,0px) + 24px)"></div>
+
+<div id="modal" class="fixed inset-0 z-50 place-items-center p-4" role="dialog" aria-modal="true" aria-labelledby="mt">
+ <div class="sf rounded-3xl p-6 sm:p-8 max-w-md w-full">
+  <h3 id="mt" class="d text-xl"></h3><p id="mp" class="mu mt-3 text-sm"></p>
+  <div class="flex gap-3 mt-6"><button id="mr" class="btn flex-1">Yozilish</button><button id="mx" class="btn o">Yopish</button></div>
+ </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
