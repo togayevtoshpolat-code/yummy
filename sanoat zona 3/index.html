@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YFFC MetalTech — Yuksalish Fayz Farovon And Capital</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>:root{--bg:#090d16;--bg2:#0f172a;--line:#1e293b;--tx:#e2e8f0;--mut:#94a3b8;--or:#f97316;--or2:#ea580c;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.hd{font-family:'Chakra Petch',Inter,sans-serif}
+.grid-bg{background-image:linear-gradient(rgba(148,163,184,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.06) 1px,transparent 1px);background-size:44px 44px}
+.glow{text-shadow:0 0 24px rgba(249,115,22,.55)}
+.btn{background:linear-gradient(135deg,var(--or),var(--or2));color:#fff;font-weight:600;box-shadow:0 0 0 rgba(249,115,22,0);transition:.25s}
+.btn:hover{box-shadow:0 0 28px rgba(249,115,22,.55);transform:translateY(-2px)}
+.btn2{border:1px solid #334155;transition:.25s}.btn2:hover{border-color:var(--or);color:var(--or)}
+.card{background:linear-gradient(160deg,#111a2e,#0b1120);border:1px solid var(--line);position:relative;overflow:hidden;transition:.35s}
+.card:hover{border-color:var(--or);transform:translateY(-6px);box-shadow:0 12px 40px -10px rgba(249,115,22,.35)}
+.card::after{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:linear-gradient(90deg,var(--or),transparent);transition:width .5s}
+.card:hover::after{width:100%}
+.laser{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--or),#fff,var(--or),transparent);box-shadow:0 0 18px 4px rgba(249,115,22,.7);animation:scan 5s ease-in-out infinite}
+@keyframes scan{0%,100%{top:8%;opacity:0}10%,90%{opacity:1}50%{top:92%}}
+.spark{animation:pulse 2.4s infinite}@keyframes pulse{50%{opacity:.35}}
+.lang button{padding:4px 9px;font-size:12px;font-weight:600;color:var(--mut);border-radius:6px;transition:.2s}
+.lang button.on{background:var(--or);color:#fff}
+.drop{border:2px dashed #334155;transition:.25s}.drop.over{border-color:var(--or);background:rgba(249,115,22,.08)}
+select,input{background:#0b1120;border:1px solid #334155;color:var(--tx)}select:focus,input:focus{outline:none;border-color:var(--or)}
+.eyebrow{color:var(--or);letter-spacing:.2em;font-size:12px;font-weight:600;text-transform:uppercase}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="fixed top-0 inset-x-0 z-50 border-b border-slate-800 backdrop-blur" style="background:rgba(9,13,22,.85);padding-top:env(safe-area-inset-top,0px)">
+ <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+  <a href="#top" class="flex items-center gap-2 hd font-bold text-lg">
+   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 8v8M8 10l8 4" /></svg>
+   <span>YFFC<span class="text-orange-500 hidden sm:inline"> MetalTech</span></span>
+  </a>
+  <nav class="hidden lg:flex gap-6 text-sm text-slate-400">
+   <a class="hover:text-orange-500" href="#services" data-i18n="nav1"></a>
+   <a class="hover:text-orange-500" href="#upload" data-i18n="nav2"></a>
+   <a class="hover:text-orange-500" href="#products" data-i18n="nav3"></a>
+   <a class="hover:text-orange-500" href="#logistics" data-i18n="nav4"></a>
+   <a class="hover:text-orange-500" href="#contact" data-i18n="nav5"></a>
+  </nav>
+  <div class="flex items-center gap-2">
+   <div class="lang flex bg-slate-900 border border-slate-800 rounded-lg p-0.5">
+    <button data-l="uz">UZ</button><button data-l="ru">RU</button><button data-l="en">EN</button>
+   </div>
+   <a href="#contact" class="btn rounded-lg px-3 py-2 text-xs sm:text-sm sm:px-4" data-i18n="cta"></a>
+  </div>
+ </div>
+<nav class="lg:hidden flex gap-5 overflow-x-auto px-4 pb-2 text-sm text-slate-400 whitespace-nowrap"><a href="#services" data-i18n="nav1"></a><a href="#upload" data-i18n="nav2"></a><a href="#products" data-i18n="nav3"></a><a href="#logistics" data-i18n="nav4"></a><a href="#contact" data-i18n="nav5"></a></nav></header>
+
+<!-- HERO -->
+<section id="top" class="relative pt-32 pb-20 grid-bg overflow-hidden">
+ <div class="laser"></div>
+ <div class="absolute -top-20 right-0 w-96 h-96 rounded-full blur-3xl" style="background:rgba(249,115,22,.14)"></div>
+ <div class="relative max-w-7xl mx-auto px-4">
+  <p class="eyebrow flex items-center gap-2"><span class="spark w-2 h-2 rounded-full bg-orange-500 inline-block"></span><span data-i18n="tag"></span></p>
+  <h1 class="mt-4 text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight max-w-4xl">
+   <span data-i18n="h1a"></span> <span class="text-orange-500 glow" data-i18n="h1b"></span>
+  </h1>
+  <p class="mt-6 text-slate-400 text-lg max-w-2xl" data-i18n="hp"></p>
+  <div class="mt-8 flex flex-wrap gap-3">
+   <a href="#upload" class="btn rounded-lg px-7 py-3.5" data-i18n="order"></a>
+   <a href="#products" class="btn2 rounded-lg px-7 py-3.5" data-i18n="catalog"></a>
+  </div>
+  <div class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-4xl">
+   <div class="card rounded-xl p-5"><div class="hd text-3xl text-orange-500">±0.05 mm</div><div class="text-sm text-slate-400 mt-1" data-i18n="st1"></div></div>
+   <div class="card rounded-xl p-5"><div class="hd text-3xl text-orange-500">500+</div><div class="text-sm text-slate-400 mt-1" data-i18n="st2"></div></div>
+   <div class="card rounded-xl p-5"><div class="hd text-3xl text-orange-500">UZ · TJ</div><div class="text-sm text-slate-400 mt-1" data-i18n="st3"></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20" style="background:var(--bg2)">
+ <div class="max-w-7xl mx-auto px-4">
+  <p class="eyebrow" data-i18n="nav1"></p>
+  <h2 class="text-3xl sm:text-4xl font-bold mt-2" data-i18n="sT"></h2>
+  <div class="grid md:grid-cols-3 gap-5 mt-10">
+   <div class="card rounded-2xl p-7">
+    <svg class="mb-4" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.6"><path d="M3 21h18M12 3v10M9 13h6l-1 5h-4z"/><path d="M5 8l2 1M19 8l-2 1M7 4l1.5 1.5M17 4l-1.5 1.5"/></svg>
+    <h3 class="text-xl font-semibold" data-i18n="s1t"></h3><p class="text-slate-400 mt-2 text-sm" data-i18n="s1d"></p>
+    <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-300"><span class="px-2 py-1 rounded bg-slate-800" data-i18n="m1"></span><span class="px-2 py-1 rounded bg-slate-800" data-i18n="m2"></span><span class="px-2 py-1 rounded bg-slate-800" data-i18n="m3"></span></div>
+   </div>
+   <div class="card rounded-2xl p-7">
+    <svg class="mb-4" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.6"><rect x="4" y="3" width="16" height="5"/><path d="M12 8v6M7 21h10M9 14h6l1 7H8z"/></svg>
+    <h3 class="text-xl font-semibold" data-i18n="s2t"></h3><p class="text-slate-400 mt-2 text-sm" data-i18n="s2d"></p>
+   </div>
+   <div class="card rounded-2xl p-7">
+    <svg class="mb-4" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.6"><path d="M3 20h8V8l10 0"/><path d="M17 4l4 4-4 4"/></svg>
+    <h3 class="text-xl font-semibold" data-i18n="s3t"></h3><p class="text-slate-400 mt-2 text-sm" data-i18n="s3d"></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- UPLOAD -->
+<section id="upload" class="py-20 grid-bg">
+ <div class="max-w-5xl mx-auto px-4">
+  <p class="eyebrow" data-i18n="nav2"></p>
+  <h2 class="text-3xl sm:text-4xl font-bold mt-2" data-i18n="uT"></h2>
+  <p class="text-slate-400 mt-3 max-w-2xl" data-i18n="uD"></p>
+  <div class="card rounded-2xl p-6 sm:p-8 mt-8 grid md:grid-cols-2 gap-6">
+   <label id="drop" class="drop rounded-xl p-8 text-center cursor-pointer flex flex-col items-center justify-center min-h-[220px]">
+    <input id="file" type="file" class="hidden" accept=".dxf,.dwg,.pdf,image/*" multiple>
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.6"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg>
+    <p class="mt-3 font-semibold" data-i18n="drop"></p>
+    <p class="text-xs text-slate-500 mt-1">.dxf · .dwg · .pdf · JPG/PNG</p>
+    <p id="fname" class="text-orange-400 text-sm mt-3 break-all"></p>
+   </label>
+   <div class="space-y-4">
+    <div><label class="text-sm text-slate-400" data-i18n="metal"></label>
+     <select id="metal" class="w-full mt-1 rounded-lg px-3 py-3">
+      <option value="1" data-i18n="m1"></option><option value="2" data-i18n="m2"></option><option value="3" data-i18n="m3"></option>
+     </select></div>
+    <div><label class="text-sm text-slate-400" data-i18n="thick"></label>
+     <select id="thick" class="w-full mt-1 rounded-lg px-3 py-3">
+      <option>0.5–1 mm</option><option>1–3 mm</option><option>3–6 mm</option><option>6–12 mm</option><option>12+ mm</option>
+     </select></div>
+    <input id="qty" type="number" min="1" placeholder="Qty / Soni / Кол-во" class="w-full rounded-lg px-3 py-3">
+    <a id="tg" href="#" target="_blank" rel="noopener" class="btn rounded-lg px-6 py-3.5 flex items-center justify-center gap-2">
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 3.5L2.7 10.8c-.9.4-.9 1.2-.2 1.4l4.8 1.5 1.8 5.7c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.4-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.2-15.2c.3-1.2-.5-1.8-1.5-1.5zM8 13.3l9.6-6c.5-.3.9-.1.5.2l-8 7.2-.3 3.3z"/></svg>
+     <span data-i18n="tgb"></span></a>
+    <p class="text-xs text-slate-500" data-i18n="note"></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="py-20" style="background:var(--bg2)">
+ <div class="max-w-7xl mx-auto px-4">
+  <p class="eyebrow" data-i18n="nav3"></p>
+  <h2 class="text-3xl sm:text-4xl font-bold mt-2" data-i18n="pT"></h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+   <div class="card rounded-2xl overflow-hidden"><div class="h-44 grid-bg flex items-center justify-center" style="background-color:#0b1120">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="#f97316" stroke-width="2"><rect x="10" y="10" width="100" height="100"/><path d="M10 60h100M60 10v100"/><circle cx="35" cy="35" r="12"/><circle cx="85" cy="85" r="12"/><path d="M85 25l10 10-10 10-10-10zM25 85l10-10 10 10-10 10z"/></svg></div>
+    <div class="p-6"><h3 class="text-lg font-semibold" data-i18n="p1t"></h3><p class="text-sm text-slate-400 mt-1" data-i18n="p1d"></p></div></div>
+   <div class="card rounded-2xl overflow-hidden"><div class="h-44 grid-bg flex items-center justify-center" style="background-color:#0b1120">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="#f97316" stroke-width="2"><path d="M20 100V40l20-20h40l20 20v60"/><path d="M40 20v80M60 20v80M80 20v80"/><circle cx="48" cy="60" r="3"/><circle cx="72" cy="60" r="3"/></svg></div>
+    <div class="p-6"><h3 class="text-lg font-semibold" data-i18n="p2t"></h3><p class="text-sm text-slate-400 mt-1" data-i18n="p2d"></p></div></div>
+   <div class="card rounded-2xl overflow-hidden"><div class="h-44 grid-bg flex items-center justify-center" style="background-color:#0b1120">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="#f97316" stroke-width="2"><circle cx="60" cy="60" r="38"/><circle cx="60" cy="60" r="14"/><path d="M60 14v18M60 88v18M14 60h18M88 60h18"/></svg></div>
+    <div class="p-6"><h3 class="text-lg font-semibold" data-i18n="p3t"></h3><p class="text-sm text-slate-400 mt-1" data-i18n="p3d"></p></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- LOGISTICS -->
+<section id="logistics" class="py-20 grid-bg">
+ <div class="max-w-7xl mx-auto px-4">
+  <p class="eyebrow" data-i18n="nav4"></p>
+  <h2 class="text-3xl sm:text-4xl font-bold mt-2" data-i18n="lT"></h2>
+  <p class="text-slate-400 mt-3 max-w-3xl" data-i18n="lD"></p>
+  <div class="card rounded-2xl p-6 sm:p-10 mt-8 overflow-x-auto">
+   <svg viewBox="0 0 760 170" class="w-full min-w-[560px]" fill="none">
+    <path d="M70 85H690" stroke="#334155" stroke-width="2" stroke-dasharray="6 6"/>
+    <path d="M70 85H380" stroke="#f97316" stroke-width="3"/>
+    <g font-family="Chakra Petch" font-size="15" fill="#e2e8f0" text-anchor="middle">
+     <circle cx="70" cy="85" r="9" fill="#f97316"/><text x="70" y="125">Surxondaryo</text>
+     <circle cx="230" cy="85" r="9" fill="#f97316"/><text x="230" y="125">Sariosiyo</text>
+     <circle cx="380" cy="85" r="11" fill="#f97316" class="spark"/><text x="380" y="125" fill="#f97316">YFFC</text>
+     <circle cx="540" cy="85" r="9" fill="#64748b"/><text x="540" y="125">Tursunzoda</text>
+     <circle cx="690" cy="85" r="9" fill="#64748b"/><text x="690" y="125">Dushanbe</text>
+    </g>
+   </svg>
+  </div>
+  <div class="grid md:grid-cols-3 gap-5 mt-5">
+   <div class="card rounded-xl p-6"><h3 class="font-semibold text-orange-500" data-i18n="l1t"></h3><p class="text-sm text-slate-400 mt-2" data-i18n="l1d"></p></div>
+   <div class="card rounded-xl p-6"><h3 class="font-semibold text-orange-500" data-i18n="l2t"></h3><p class="text-sm text-slate-400 mt-2" data-i18n="l2d"></p></div>
+   <div class="card rounded-xl p-6"><h3 class="font-semibold text-orange-500" data-i18n="l3t"></h3><p class="text-sm text-slate-400 mt-2" data-i18n="l3d"></p></div>
+  </div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20" style="background:var(--bg2)">
+ <div class="max-w-7xl mx-auto px-4">
+  <p class="eyebrow" data-i18n="nav5"></p>
+  <h2 class="text-3xl sm:text-4xl font-bold mt-2" data-i18n="cT"></h2>
+  <div class="grid lg:grid-cols-2 gap-6 mt-8">
+   <div class="space-y-4">
+    <a href="tel:+998000000000" class="card rounded-xl p-5 flex items-center gap-4 block">
+     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+     <div><div class="text-xs text-slate-500" data-i18n="phone"></div><div class="hd text-xl">+998 (XX) XXX-XX-XX</div></div></a>
+    <a href="https://t.me/username" target="_blank" rel="noopener" class="card rounded-xl p-5 flex items-center gap-4 block">
+     <svg width="28" height="28" viewBox="0 0 24 24" fill="#f97316"><path d="M21.5 3.5L2.7 10.8c-.9.4-.9 1.2-.2 1.4l4.8 1.5 1.8 5.7c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.4-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.2-15.2c.3-1.2-.5-1.8-1.5-1.5z"/></svg>
+     <div><div class="text-xs text-slate-500">Telegram</div><div class="hd text-xl">@username</div></div></a>
+    <a href="https://instagram.com/username" target="_blank" rel="noopener" class="card rounded-xl p-5 flex items-center gap-4 block">
+     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#f97316"/></svg>
+     <div><div class="text-xs text-slate-500">Instagram</div><div class="hd text-xl">@username</div></div></a>
+   </div>
+   <div class="card rounded-xl p-2">
+    <iframe title="Map" class="w-full rounded-lg" style="height:320px;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.7)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sariosiyo,+Surxondaryo,+Uzbekistan&output=embed"></iframe>
+    <a href="https://www.google.com/maps/search/?api=1&query=Sariosiyo+Surxondaryo+Uzbekistan" target="_blank" rel="noopener" class="btn2 rounded-lg px-5 py-3 mt-2 block text-center text-sm" data-i18n="bigmap"></a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-800 py-10 text-sm text-slate-400" style="padding-bottom:calc(2.5rem + env(safe-area-inset-bottom,0px))">
+ <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+  <div><div class="hd text-slate-200 font-semibold">“Yuksalish Fayz Farovon And Capital” MChJ</div><p class="mt-2" data-i18n="addr"></p></div>
+  <div><div class="text-slate-200 font-semibold" data-i18n="req"></div><p class="mt-2">INN: XXX XXX XXX<br>R/s: XXXX XXXX XXXX XXXX<br>MFO: XXXXX</p></div>
+  <div><div class="text-slate-200 font-semibold" data-i18n="hrs"></div><p class="mt-2" data-i18n="hrsv"></p></div>
+ </div>
+ <p class="max-w-7xl mx-auto px-4 mt-8 text-slate-500">© 2026 YFFC MetalTech. <span data-i18n="rights"></span></p>
+</footer>
+
+<script>const D={
+uz:{nav1:"Xizmatlar",nav2:"Chizma yuborish",nav3:"Mahsulotlar",nav4:"Logistika",nav5:"Aloqa",cta:"Bog‘lanish",tag:"Sariosiyo · Surxondaryo · CNC metallni qayta ishlash",h1a:"Metallni lazerda kesish,",h1b:"shtampovka va qoliplash",hp:"Aniq, tez va ishonchli: lazerli kesish, presslash va listogib xizmatlari — chizmangizdan tayyor detalgacha.",order:"Buyurtma berish",catalog:"Katalogni ko‘rish",st1:"Lazer aniqligi",st2:"detal / kunlik quvvat",st3:"Surxondaryo va Tojikistonga yetkazib berish",sT:"Ishlab chiqarish imkoniyatlari",s1t:"CNC lazerli kesish",s1d:"Murakkab kontur va teshiklarni yuqori aniqlikda, minimal chiqindi bilan kesamiz.",m1:"Qora metall",m2:"Nerjavayka",m3:"Rangli metallar",s2t:"Shtampovka va presslash",s2d:"Ommaviy detallar, ankerlar va burchakliklar — barqaror sifat va past narx.",s3t:"Listogib",s3d:"List metallni aniq burchak ostida bukish: korpus, profil, kronshteyn.",uT:"Chizma yoki eskiz yuboring",uD:"Faylni yuklang, metall va qalinlikni tanlang — narxni tezda hisoblab beramiz.",drop:"Faylni shu yerga tashlang yoki bosing",metal:"Metall turi",thick:"Qalinligi",tgb:"Telegram orqali yuborish",note:"Telegram ochilgach, faylni chatga biriktiring.",pT:"Mahsulotlar va galereya",p1t:"Eshik-darvoza va fasad naqshlari",p1d:"Lazerda kesilgan bezak panellar va panjaralar.",p2t:"Qurilish metizlari",p2d:"Ankerlar, burchakliklar, kronshteynlar, plastinalar.",p3t:"Sanoat detallari",p3d:"Buyurtma bo‘yicha flanes, tayanch va korpus detallari.",lT:"Joylashuv va logistika",lD:"Chegaraoldi hudud: Sariosiyo (Dashnobod) orqali O‘zbekiston ichki bozoriga va Tojikiston yo‘nalishiga (Dushanbe, Tursunzoda) qulay yuk yetkazish.",l1t:"Ichki bozor",l1d:"Surxondaryo va qo‘shni viloyatlarga tezkor yetkazish.",l2t:"Tojikiston yo‘nalishi",l2d:"Tursunzoda va Dushanbega eksport yetkazmalari.",l3t:"Hujjatlar",l3d:"Yuk hujjatlari va yo‘l-yo‘riq bo‘yicha yordam.",cT:"Biz bilan bog‘laning",phone:"Telefon",bigmap:"Kattaroq xaritada ko‘rish",addr:"Surxondaryo viloyati, Sariosiyo tumani",req:"Rekvizitlar",hrs:"Ish vaqti",hrsv:"Du–Sha: 08:00–18:00\nYakshanba: dam olish",rights:"Barcha huquqlar himoyalangan."},
+ru:{nav1:"Услуги",nav2:"Отправить чертёж",nav3:"Продукция",nav4:"Логистика",nav5:"Контакты",cta:"Связаться",tag:"Сариасия · Сурхандарья · ЧПУ-обработка металла",h1a:"Лазерная резка металла,",h1b:"штамповка и формовка",hp:"Точно, быстро и надёжно: лазерная резка, прессование и листогиб — от чертежа до готовой детали.",order:"Заказать",catalog:"Смотреть каталог",st1:"Точность лазера",st2:"деталей в день",st3:"Доставка по Сурхандарье и в Таджикистан",sT:"Производственные возможности",s1t:"Лазерная резка с ЧПУ",s1d:"Режем сложные контуры и отверстия с высокой точностью и минимумом отходов.",m1:"Чёрный металл",m2:"Нержавейка",m3:"Цветные металлы",s2t:"Штамповка и прессование",s2d:"Массовые детали, анкеры и уголки — стабильное качество и низкая цена.",s3t:"Листогиб",s3d:"Точная гибка листового металла: корпуса, профили, кронштейны.",uT:"Отправьте чертёж или эскиз",uD:"Загрузите файл, выберите металл и толщину — быстро рассчитаем стоимость.",drop:"Перетащите файл сюда или нажмите",metal:"Тип металла",thick:"Толщина",tgb:"Отправить через Telegram",note:"После открытия Telegram прикрепите файл в чат.",pT:"Продукция и галерея",p1t:"Узоры для ворот, дверей и фасадов",p1d:"Декоративные панели и ограждения лазерной резки.",p2t:"Строительный крепёж",p2d:"Анкеры, уголки, кронштейны, пластины.",p3t:"Промышленные детали",p3d:"Фланцы, опоры и корпусные детали под заказ.",lT:"Расположение и логистика",lD:"Приграничная зона: удобная доставка через Сариасию (Дашнабад) на внутренний рынок Узбекистана и в сторону Таджикистана (Душанбе, Турсунзаде).",l1t:"Внутренний рынок",l1d:"Быстрая доставка по Сурхандарье и соседним областям.",l2t:"Таджикистан",l2d:"Экспортные поставки в Турсунзаде и Душанбе.",l3t:"Документы",l3d:"Помощь с грузовыми документами и маршрутом.",cT:"Свяжитесь с нами",phone:"Телефон",bigmap:"Открыть на большой карте",addr:"Сурхандарьинская область, Сариасийский район",req:"Реквизиты",hrs:"Режим работы",hrsv:"Пн–Сб: 08:00–18:00\nВоскресенье: выходной",rights:"Все права защищены."},
+en:{nav1:"Services",nav2:"Send drawing",nav3:"Products",nav4:"Logistics",nav5:"Contact",cta:"Contact us",tag:"Sariosiyo · Surkhandarya · CNC metalworking",h1a:"Laser cutting,",h1b:"stamping & forming of metal",hp:"Precise, fast and reliable: laser cutting, pressing and sheet bending — from your drawing to a finished part.",order:"Place an order",catalog:"View catalog",st1:"Laser accuracy",st2:"parts / daily capacity",st3:"Delivery across Surkhandarya and to Tajikistan",sT:"Production capabilities",s1t:"CNC laser cutting",s1d:"Complex contours and holes cut with high precision and minimal waste.",m1:"Carbon steel",m2:"Stainless steel",m3:"Non-ferrous metals",s2t:"Stamping & pressing",s2d:"Mass-produced parts, anchors and angle brackets — consistent quality, low cost.",s3t:"Sheet bending",s3d:"Accurate bending at exact angles: housings, profiles, brackets.",uT:"Send a drawing or sketch",uD:"Upload your file, pick the metal and thickness — we’ll quote you quickly.",drop:"Drop your file here or click",metal:"Metal type",thick:"Thickness",tgb:"Send via Telegram",note:"After Telegram opens, attach your file in the chat.",pT:"Products & gallery",p1t:"Gate, door & facade patterns",p1d:"Laser-cut decorative panels and railings.",p2t:"Construction hardware",p2d:"Anchors, angles, brackets, plates.",p3t:"Industrial parts",p3d:"Custom flanges, supports and housing parts.",lT:"Location & logistics",lD:"Border-zone advantage: convenient freight via Sariosiyo (Dashnobod) to Uzbekistan’s domestic market and toward Tajikistan (Dushanbe, Tursunzoda).",l1t:"Domestic market",l1d:"Fast delivery across Surkhandarya and neighboring regions.",l2t:"Tajikistan route",l2d:"Export shipments to Tursunzoda and Dushanbe.",l3t:"Paperwork",l3d:"Support with freight documents and routing.",cT:"Get in touch",phone:"Phone",bigmap:"View on larger map",addr:"Surkhandarya region, Sariosiyo district",req:"Company details",hrs:"Working hours",hrsv:"Mon–Sat: 08:00–18:00\nSunday: closed",rights:"All rights reserved."}
+};
+const CFG={phone:"+998903769998",view:"+998 (90) 376-99-98",tg:"Toshmurod99",ig:"xs.metal",photos:[]},TG=CFG.tg;
+let cur="uz";
+function setLang(l){
+ cur=l;const d=D[l];
+ document.documentElement.lang=l;
+ document.querySelectorAll("[data-i18n]").forEach(e=>{const v=d[e.dataset.i18n];if(v!==undefined)e.innerHTML=v.replace(/\n/g,"<br>")});
+ document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===l));
+ try{localStorage.setItem("lang",l)}catch(e){}
+ updTg();
+}
+function updTg(){
+ const m=document.getElementById("metal"),t=document.getElementById("thick"),q=document.getElementById("qty");
+ const txt=`YFFC MetalTech\n${D[cur].metal}: ${m.options[m.selectedIndex].text}\n${D[cur].thick}: ${t.value}\n${q.value?("Qty: "+q.value):""}`;
+ document.getElementById("tg").href=`https://t.me/${TG}?text=${encodeURIComponent(txt)}`;
+}
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+["metal","thick","qty"].forEach(i=>document.getElementById(i).addEventListener("input",updTg));
+const drop=document.getElementById("drop"),file=document.getElementById("file"),fn=document.getElementById("fname");
+const show=fs=>fn.textContent=[...fs].map(f=>f.name).join(", ");
+file.onchange=()=>show(file.files);
+["dragenter","dragover"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add("over")}));
+["dragleave","drop"].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove("over")}));
+drop.addEventListener("drop",e=>{if(e.dataTransfer.files.length)show(e.dataTransfer.files)});
+let s="uz";try{s=localStorage.getItem("lang")||"uz"}catch(e){}
+const _sl=setLang;setLang=function(l){_sl(l);document.getElementById('qty').placeholder=({uz:'Soni (dona)',ru:'Количество (шт.)',en:'Quantity (pcs)'})[l];const b=document.getElementById('imap');if(b)b.textContent=({uz:'Interaktiv xaritani yoqish',ru:'Включить интерактивную карту',en:'Enable interactive map'})[l]};
+const st=document.createElement('style');st.textContent='.rv{opacity:0;transition:opacity .7s,transform .35s,box-shadow .35s,border-color .35s}.rv.in{opacity:1}@keyframes dash{to{stroke-dashoffset:-400}}.cut{stroke-dasharray:60 340;animation:dash 6s linear infinite}';document.head.appendChild(st);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('section .card').forEach(c=>{c.classList.add('rv');io.observe(c)});
+const top_=document.getElementById('top'),hs=document.createElement('div');hs.className='hidden lg:block absolute right-8 top-28 w-[430px] opacity-60 pointer-events-none';hs.innerHTML=`<svg viewBox='0 0 400 320' fill='none'><defs><linearGradient id='mg' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#64748b'/><stop offset='1' stop-color='#1e293b'/></linearGradient></defs><rect x='10' y='20' width='380' height='280' rx='10' fill='url(#mg)' stroke='#475569'/><g stroke='#f97316' stroke-width='2'><circle cx='110' cy='110' r='42'/><path d='M230 70h110v80H230zM110 210l40 50h-80z'/><rect x='230' y='190' width='110' height='70' rx='20'/></g><g class='cut' stroke='#fff' stroke-width='3' stroke-linecap='round'><circle cx='110' cy='110' r='42'/><path d='M230 70h110v80H230z'/><rect x='230' y='190' width='110' height='70' rx='20'/></g></svg>`;top_.insertBefore(hs,top_.firstChild);
+const defs=`<defs><linearGradient id='st' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#cbd5e1'/><stop offset='.25' stop-color='#64748b'/><stop offset='.5' stop-color='#94a3b8'/><stop offset='.75' stop-color='#475569'/><stop offset='1' stop-color='#1e293b'/></linearGradient><radialGradient id='rg' cx='.35' cy='.3' r='.9'><stop offset='0' stop-color='#e2e8f0'/><stop offset='.45' stop-color='#64748b'/><stop offset='1' stop-color='#1e293b'/></radialGradient><radialGradient id='bg' cx='.5' cy='.5' r='.6'><stop offset='0' stop-color='#f97316' stop-opacity='.28'/><stop offset='1' stop-color='#f97316' stop-opacity='0'/></radialGradient><filter id='sh' x='-20%' y='-20%' width='140%' height='150%'><feDropShadow dx='0' dy='6' stdDeviation='5' flood-color='#000' flood-opacity='.7'/></filter></defs><rect width='240' height='176' fill='url(#bg)'/>`;
+const hole='fill="#090d16" stroke="#f1f5f9" stroke-opacity=".35" stroke-width="1.2"';
+const arts=[`<g filter='url(#sh)'><rect x='24' y='12' width='192' height='148' rx='6' fill='url(#st)' stroke='#e2e8f0' stroke-opacity='.5'/></g><rect x='32' y='20' width='176' height='132' rx='3' fill='none' stroke='#0f172a' stroke-opacity='.5'/><g ${hole}><path d='M120 28l12 22 24-8-8 24 22 12-22 12 8 24-24-8-12 22-12-22-24 8 8-24-22-12 22-12-8-24 24 8z'/><circle cx='120' cy='86' r='12' fill='#f97316' fill-opacity='.9' stroke='#fed7aa'/><circle cx='52' cy='42' r='11'/><circle cx='188' cy='42' r='11'/><circle cx='52' cy='130' r='11'/><circle cx='188' cy='130' r='11'/><path d='M64 86h30M146 86h30' stroke='#090d16' stroke-width='6' stroke-linecap='round'/></g><path d='M32 20L208 152' stroke='#fff' stroke-opacity='.12' stroke-width='14'/>`,`<g filter='url(#sh)'><path d='M30 40l50-18v84l90 0v34H30z' fill='url(#st)' stroke='#e2e8f0' stroke-opacity='.5'/><path d='M30 40l50-18 8 6-50 18z' fill='#e2e8f0' fill-opacity='.55'/></g><g ${hole}><circle cx='56' cy='66' r='7'/><circle cx='56' cy='100' r='7'/><circle cx='106' cy='128' r='7'/><circle cx='146' cy='128' r='7'/></g><g filter='url(#sh)'><rect x='152' y='28' width='58' height='46' rx='3' fill='url(#st)' stroke='#e2e8f0' stroke-opacity='.5'/></g><g ${hole}><circle cx='164' cy='40' r='4'/><circle cx='198' cy='40' r='4'/><circle cx='164' cy='62' r='4'/><circle cx='198' cy='62' r='4'/></g><g filter='url(#sh)'><rect x='181' y='92' width='10' height='62' rx='2' fill='url(#st)'/><path d='M181 110h10M181 116h10M181 122h10M181 128h10M181 134h10' stroke='#0f172a' stroke-opacity='.6'/><path d='M174 84l7-6h10l7 6v10h-24z' fill='url(#rg)' stroke='#e2e8f0' stroke-opacity='.5'/></g>`,`<g filter='url(#sh)'><circle cx='120' cy='88' r='70' fill='url(#rg)' stroke='#e2e8f0' stroke-opacity='.5'/></g><circle cx='120' cy='88' r='52' fill='none' stroke='#0f172a' stroke-opacity='.45' stroke-width='3'/><circle cx='120' cy='88' r='52' fill='none' stroke='#fff' stroke-opacity='.25' stroke-width='1' transform='translate(0 2)'/><circle cx='120' cy='88' r='22' fill='#090d16' stroke='#f97316' stroke-width='1.6'/><circle cx='120' cy='88' r='30' fill='none' stroke='#0f172a' stroke-opacity='.5'/><g>${[0,60,120,180,240,300].map(a=>{const r=a*Math.PI/180,x=120+60*Math.cos(r),y=88+60*Math.sin(r);return `<circle cx='${x}' cy='${y}' r='8' fill='#090d16' stroke='#f1f5f9' stroke-opacity='.4'/><polygon points='${[0,1,2,3,4,5].map(k=>(x+5.5*Math.cos(k*Math.PI/3)).toFixed(1)+','+(y+5.5*Math.sin(k*Math.PI/3)).toFixed(1)).join(' ')}' fill='url(#st)' stroke='#0f172a' stroke-opacity='.6'/>`}).join('')}</g>`];
+document.querySelectorAll('#products .card > div:first-child').forEach((d,i)=>{const p=CFG.photos&&CFG.photos[i];d.innerHTML=p?`<img src='${p}' alt='' class='w-full h-full object-cover'>`:`<svg viewBox='0 0 240 176' class='w-full h-full'>${defs}${arts[i]}</svg>`});
+const mp=document.querySelector('#contact iframe').parentElement;
+mp.innerHTML=`<div id='mapbox' class='rounded-lg overflow-hidden' style='height:320px;background:#0b1120'><svg viewBox='0 0 520 320' class='w-full h-full' fill='none'><g stroke='#1e293b'><path d='M0 80h520M0 160h520M0 240h520M130 0v320M260 0v320M390 0v320'/></g><path d='M330 0l-30 150 70 170' stroke='#ef4444' stroke-width='2' stroke-dasharray='8 6'/><text x='338' y='30' fill='#ef4444' font-size='11'>UZ | TJ</text><path d='M60 280L130 200L230 130L300 115L400 70L480 30' stroke='#475569' stroke-width='3'/><path d='M230 130L300 115L400 70L480 30' stroke='#f97316' stroke-width='3' stroke-dasharray='6 6'/><g fill='#94a3b8' font-size='12' font-family='Inter'><circle cx='60' cy='280' r='5'/><text x='70' y='296'>Termiz</text><circle cx='130' cy='200' r='5'/><text x='72' y='190'>Denov</text><circle cx='300' cy='115' r='5' fill='#f97316'/><text x='250' y='105'>Dashnobod</text><circle cx='400' cy='70' r='5'/><text x='345' y='60'>Tursunzoda</text><circle cx='480' cy='30' r='5'/><text x='428' y='20'>Dushanbe</text></g><circle cx='230' cy='130' r='11' fill='#f97316' class='spark'/><circle cx='230' cy='130' r='4' fill='#fff'/><text x='175' y='160' fill='#f97316' font-size='13' font-weight='600'>YFFC · Sariosiyo</text></svg></div><div class='grid sm:grid-cols-2 gap-2 mt-2'><button id='imap' class='btn2 rounded-lg px-4 py-3 text-sm'></button><a href='https://www.google.com/maps/search/?api=1&query=Sariosiyo+Surxondaryo+Uzbekistan' target='_blank' rel='noopener' class='btn rounded-lg px-4 py-3 text-sm text-center' data-i18n='bigmap'></a></div>`;
+document.getElementById('imap').onclick=()=>{document.getElementById('mapbox').innerHTML=`<iframe title='Map' class='w-full h-full' style='border:0' loading='lazy' src='https://www.google.com/maps?q=Sariosiyo,+Surxondaryo,+Uzbekistan&output=embed'></iframe>`};
+const ca=document.querySelectorAll('#contact a.card');ca[0].href='tel:'+CFG.phone;ca[0].querySelector('.hd').textContent=CFG.view;ca[1].href='https://t.me/'+CFG.tg;ca[1].querySelector('.hd').textContent='@'+CFG.tg;ca[2].href='https://instagram.com/'+CFG.ig;ca[2].querySelector('.hd').textContent='@'+CFG.ig;
+setLang(D[s]?s:"uz");
+</script>
+</body>
+</html>
